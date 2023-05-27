@@ -1,8 +1,9 @@
-#include "shell.h"
+i#include "shell.h"
 
 /**
  * get_history_file - this function pulls the history file
  * @info: contains the key argument
+ * _getenv- prints the current environment
  * Return: the resulting string variable
  */
 
