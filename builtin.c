@@ -32,7 +32,8 @@ int _myexit(info_t *info)
 /**
  * _mycd - Lets you change the current directory.
  * @info: Structur that has arguments that maintain functional prototype.
- *
+ *_getenv - helps you print the prsent environment
+
  * Return: 0 always.
  */
 int _mycd(info_t *info)
