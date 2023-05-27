@@ -4,7 +4,7 @@
  * main - Main entry point
  * @ac: Gets Arg count
  * @av: Gets arg vector
- *
+ * populate_env_list: Gives the list for the present environ
  *
  * Return: 0 on success, 1 on error
  */
