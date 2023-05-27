@@ -39,40 +39,7 @@ int hsh(info_t *info, char **av)
 	exit(info->status);
 	exit(info->err_num);
 	}
-	return (builtin_ret);
-}
-
-/**
- * find_builtin - this function pulls the built in command
- * @info: contains the info variable
- * Return: -1 if function unavailable
- * 0 if succesful
- * 1 if found
- * 2 if it exits
- */
-int find_builtin(info_t *info)
-{
-	int i, built_in_ret = -1;
-	builtin_table builtintbl[] = {
-	{"exit", _myexit},
-	{"env", _myenv},
-	{"help", _myhelp},
-	{"history", _myhistory},
-	{"setenv", _mysetenv},
-	{"unsetenv", _myunsetenv},
-	{"cd", _mycd},
-	{"alias", _myalias},
-	{NULL, NULL}
-	};
-
-	for (i = 0; builtintbl[i].type; i++)
-	if (_strcmp(info->argv[0], builtintbl[i].type) == 0)
-	{
-	info->line_count++;
-	built_in_ret = builtintbl[i].func(info);
-	break;
-	}
-	return (built_in_ret);
+	return (0);
 }
 
 /**
