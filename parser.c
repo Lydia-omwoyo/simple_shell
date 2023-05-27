@@ -1,4 +1,6 @@
 #include "shell.h"
+#include "stdio.h"
+#include "starts_with.c"
 
 /**
  * is_cmd - examines if file is executable
